@@ -1,0 +1,24 @@
+create a react To Do style app that is a directory for 100 Days of Code projects
+
+----- form data: -----
+- day number
+- title
+- link to github
+- link to deployed app/code pen
+
+----- user stories: -----
+the main page will list all data
+only logged in user (me) can create, update, or delete
+
+----- brainstorm: -----
+create all paths
+create log in page
+apply auth to necessary routes
+
+if i only want one user, do i need auth?
+
+let's just start without auth, like JAMList
+
+----- pseudocode: -----
+set up backend express app
+set up front end create-react-app
