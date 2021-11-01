@@ -33,6 +33,14 @@ router.post("/", async (req, res) => {
 });
 
 // -- destroy --
+router.delete("/:id", async (req, res) => {
+  try {
+    const deletedProject = await Projects.findByIdAndRemove(req.params.id);
+    res.status(200).json(deletedProject);
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+});
 
 // -- update --
 
