@@ -14,14 +14,33 @@ const ProjectList = () => {
     }
   };
 
+  const projectsRow = projects.map((project) => (
+    <tr>
+      <td>{project.day}</td>
+      <td>{project.title}</td>
+      <td>{project.github}</td>
+      <td>{project.app}</td>
+    </tr>
+  ));
+
   useEffect(() => {
     getProjects();
   }, []);
 
   return (
-    <header>
-      <h2>list!</h2>
-    </header>
+    <>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Project</th>
+            <th>Link to GitHub</th>
+            <th>Link to Deployed App</th>
+          </tr>
+        </thead>
+        <tbody>{projectsRow}</tbody>
+      </table>
+    </>
   );
 };
 
