@@ -43,5 +43,17 @@ router.delete("/:id", async (req, res) => {
 });
 
 // -- update --
+router.put("/:id", async (req, res) => {
+  try {
+    const updatedProject = await Projects.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true }
+    );
+    res.status(200).json(updatedProject);
+  } catch (error) {
+    res.status(400).json({ error: error.messages });
+  }
+});
 
 module.exports = router;
