@@ -15,7 +15,7 @@ const ProjectList = () => {
   };
 
   const projectsRow = projects.map((project) => (
-    <tr>
+    <tr key={project._id}>
       <td>{project.day}</td>
       <td>{project.title}</td>
       <td>{project.github}</td>
