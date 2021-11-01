@@ -1,9 +1,16 @@
 const express = require("express");
 const router = express.Router();
-const Project = require("../models/projects");
+const Projects = require("../models/project");
 
 // -- index --
-router.get("/", (req, res) => res.send("index page"));
+router.get("/", async (req, res) => {
+  try {
+    const allProjects = await Projects.find();
+    res.status(200).json(allProjects);
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+});
 
 // -- show --
 
