@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center" id="top">
-    <img src="assets/logo.png" alt="Logo TBD">
+    <!-- <img src="assets/logo.png" alt="Logo TBD"> -->
 
   <h3 align="center">100 Days of Code</h3>
 
