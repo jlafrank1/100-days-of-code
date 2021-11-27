@@ -1,0 +1,40 @@
+body {
+  background-color: #f2cc8f;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#container {
+  margin-top: 50px;
+}
+
+h1,
+h2,
+span,
+li {
+  color: #3d405b;
+}
+
+span {
+  font-weight: bold;
+}
+
+div {
+  background-color: #e07a5f;
+  padding: 10px;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#today,
+#timer {
+  background-color: #f4f1de;
+  margin: 10px auto;
+  border: 5px solid #81b29a;
+}
+
+li {
+  display: inline;
+  padding: 7px;
+}
